@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const font = Figtree({ subsets: ["latin"] });
 
@@ -18,8 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <Toaster />
+        <div className="bg-gray-100 min-h-full">
         <Navbar />
         {children}
+        </div>
+        
       </body>
     </html>
   );
