@@ -60,7 +60,7 @@ const Search = () => {
         value={country}
         onChange={(value) => setCountry(value?.value)}
       />
-      {/* <SelectDate date={date} setDate={setDate} /> */}
+      <SelectDate date={date} setDate={setDate} />
       <SelectPrice price={price} setPrice={setPrice} />
       <SelectPropertyType type={type} setType={setType} />
       <Button className="bg-purple-600 text-lg w-full h-full" onClick={onReset}>
