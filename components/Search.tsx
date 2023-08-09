@@ -55,7 +55,7 @@ const Search = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4 p-4 my-6 w-[80vw] m-auto bg-purple-200 shadow-xl rounded-md shadow-purple-300">
+    <div className="grid grid-cols-2 md:grid-cols-5 gap-x-4 gap-y-4 p-4 my-6 w-[80vw] m-auto bg-purple-200 shadow-xl rounded-md shadow-purple-300">
       <SelectCountries
         value={country}
         onChange={(value) => setCountry(value?.value)}
